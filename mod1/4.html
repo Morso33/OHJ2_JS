@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="mutable"></h1>
+</body>
+
+
+<script>
+    const name = prompt("nimi")
+    const randomNumber = Math.floor(Math.random() * 4) + 1
+    let rooms = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
+    let room = rooms[randomNumber - 1]
+    document.querySelector("#mutable").textContent = `${name}, you are ${room}.`
+</script>
+
+</html>

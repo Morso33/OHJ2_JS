@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="mutable"></h1>
+</body>
+
+
+<script>
+let participants = prompt("Enter the number of dogs: ");
+let names = [];
+for (let i = 0; i < participants; i++) {
+    let name = prompt("Enter the name of dog " + (i + 1) + ": ");
+    names.push(name);
+}
+names.sort().reverse();
+let list = "<ul>";
+for (let i = 0; i < names.length; i++) {
+    list += "<li>" + names[i] + "</li>";
+}
+list += "</ul>";
+document.getElementById("mutable").innerHTML = list;
+</script>
+
+</html>

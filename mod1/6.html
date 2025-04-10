@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="mutable"></h1>
+</body>
+
+
+<script>
+    const numberOfDice = prompt("Enter the number of dice rolls:")
+    let sum = 0
+
+    for (let i = 0; i < numberOfDice; i++) {
+        const roll = Math.floor(Math.random() * 6) + 1
+        sum += roll
+    }
+
+    document.querySelector("#mutable").textContent = `The sum of the dice rolls is: ${sum}`
+</script>
+
+</html>

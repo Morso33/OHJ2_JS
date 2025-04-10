@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id ="mutable"></h1>
+</body>
+
+
+<script>
+    const integer1 = prompt("integer1")
+    const integer2 = prompt("integer2")
+    const intger3 = prompt("integer3")
+
+    const sum = parseInt(integer1) + parseInt(integer2) + parseInt(intger3)
+    const product = parseInt(integer1) * parseInt(integer2) * parseInt(intger3)
+    const average = sum / 3
+
+    document.querySelector("#mutable").textContent = `Sum: ${sum}, Product: ${product}, Average: ${average}`
+</script>
+
+</html>
